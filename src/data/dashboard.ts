@@ -1,0 +1,78 @@
+import type { Task, KpiPoint } from '@/types';
+
+export const tasks: Task[] = [
+  {
+    id: 'T-001',
+    title: 'Review 4 high-priority leads',
+    type: 'leads',
+    due: 'Today',
+    priority: 'high',
+    done: false,
+    leadIds: ['L-001', 'L-005', 'L-009', 'L-012'],
+    meta: '4 leads',
+  },
+  {
+    id: 'T-002',
+    title: 'Call Marcus Bennett — enterprise pilot',
+    type: 'call',
+    due: 'Today',
+    priority: 'high',
+    done: false,
+    leadIds: ['L-005'],
+    meta: '$120k at stake',
+  },
+  {
+    id: 'T-003',
+    title: 'Send pilot proposal to Northwind',
+    type: 'follow-up',
+    due: 'Today',
+    priority: 'high',
+    done: false,
+    leadIds: ['L-001'],
+  },
+  {
+    id: 'T-004',
+    title: 'Return 3 missed incoming calls',
+    type: 'call',
+    due: 'Today',
+    priority: 'medium',
+    done: false,
+    meta: '3 missed',
+  },
+  {
+    id: 'T-005',
+    title: 'Review call with Rahul Desai',
+    type: 'review',
+    due: 'Tomorrow',
+    priority: 'medium',
+    done: false,
+    leadIds: ['L-009'],
+  },
+  {
+    id: 'T-006',
+    title: 'Practice pitch with AvaniBot',
+    type: 'follow-up',
+    due: 'Tomorrow',
+    priority: 'low',
+    done: true,
+  },
+  {
+    id: 'T-007',
+    title: 'Follow up with Cobalt Retail on procurement',
+    type: 'follow-up',
+    due: 'Oct 21',
+    priority: 'medium',
+    done: false,
+    leadIds: ['L-002'],
+  },
+];
+
+export const weeklyPerformance: KpiPoint[] = [
+  { day: 'Mon', calls: 42, connected: 28, converted: 6, earnings: 12400 },
+  { day: 'Tue', calls: 51, connected: 33, converted: 8, earnings: 18200 },
+  { day: 'Wed', calls: 38, connected: 24, converted: 5, earnings: 9800 },
+  { day: 'Thu', calls: 47, connected: 31, converted: 9, earnings: 21500 },
+  { day: 'Fri', calls: 55, connected: 38, converted: 11, earnings: 26700 },
+  { day: 'Sat', calls: 22, connected: 14, converted: 4, earnings: 8200 },
+  { day: 'Sun', calls: 12, connected: 7, converted: 2, earnings: 3600 },
+];
